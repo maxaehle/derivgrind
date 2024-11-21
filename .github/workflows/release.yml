@@ -15,7 +15,7 @@ jobs:
       - name: Install software
         run: yum update && yum install -y python3 libgcc.i686 glibc-devel.i686 libstdc++-devel.i686
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive
       - name: Configure and build
